@@ -1,0 +1,66 @@
+﻿@model PartialView.Models.FilmsDetails
+
+
+<table class="table" style="border:2px solid #00ffd7; border-radius:10px;">
+    <tbody>
+        <tr>
+            <td>
+                Title:
+            </td>
+            <td>
+                @Model.Title
+            </td>
+        </tr>
+        <tr class="table-active">
+            <td>
+                Duration:
+            </td>
+            <td>
+                @Model.Duration
+            </td>
+        </tr>
+        <tr class="table-success">
+            <td>
+                Description
+            </td>
+            <td>
+                @Model.Description
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+
+
+@*<table class="table">
+        <tr>
+            <td>
+                <table>
+                    <tr>
+                        <td>
+                            Title:
+                        </td>
+                        <td>
+                            @Model.Title
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Duration:
+                        </td>
+                        <td>
+                            @Model.Duration
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Description:
+                        </td>
+                        <td>
+                            @Model.Description
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>*@

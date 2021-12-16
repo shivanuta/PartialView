@@ -1,0 +1,19 @@
+﻿<link href="~/StylesAndJS/css/bootstrap.min.css" rel="stylesheet" />
+<link href="~/StylesAndJS/css/style.css" rel="stylesheet" />
+
+@model IEnumerable<PartialView.Models.FilmsDetails>
+
+
+
+
+
+<div class="container-fluid" style="margin-top:10px;">
+    <div class="row">
+        @foreach (var film in Model)
+        {
+            <div class="col-md-4">
+                @Html.Partial("_film", film)
+            </div>
+        }
+    </div>
+</div>
